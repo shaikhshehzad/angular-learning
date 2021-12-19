@@ -1,0 +1,19 @@
+the home page code is rendered from src/ app folder .
+
+
+writing code app.component.html 
+and css in .css 
+and ts is for type scripting 
+In src/app you can find various files for the root component of the application.
+app.component.css: contains all the CSS styles for the component.
+app.component.html: contains all the HTML code used by the component to display itself.
+app.component.ts: contains all the code used by the component to control its behavior.
+spec.ts is used for testing 
+
+app.module.ts is entry point for app 
+
+we install all the external dependencies like bootstrap and jquery .
+double curly braces denote a javascript variable .
+.ts component file contains the  logic 
+
+in angular directives are custom html attributes 

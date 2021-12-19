@@ -1,0 +1,80 @@
+<!-- <p>todos works!</p>
+<p>todos works!</p>
+<p>todos works!</p>
+<p>todos works!</p>
+ -->
+ 
+
+     <!-- <app-todo-item>{{Todo.sno}} - {{Todo.title}} - {{Todo.desc}} - {{Todo.active}}</app-todo-item> -->
+<h2>{{greetUser()}}</h2>
+<input [id]="myid"  type="text" value="Shehzad">
+<input [disabled]="isdisabled" [id]="myid" type="text" value="Shehzad">
+<p class="text-success"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi distinctio ipsum inventore. Dolorem nostrum exercitationem blanditiis illo officiis esse soluta natus veniam sit culpa nulla, hic dolore magni aspernatur molestias?</p>
+<p [class]="successClass">successClass Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam animi dolorum, ratione consequuntur tenetur quo minima! Incidunt nobis quam excepturi? Modi quidem dicta quo et eveniet architecto nulla praesentium impedit deserunt ex quae, illum exercitationem dignissimos obcaecati quos neque harum accusamus placeat vero voluptas facilis unde adipisci. Eaque, quia odio!</p>
+
+<h2 [class.text-danger]="haserror">haserror Lorem ipsum dolor sit amet.</h2>
+
+<h2 [ngClass]="messageClasses"> messageClasses Lorem ipsum dolor sit amet.</h2>
+
+<h2 [style.color]="haserror ? 'red' : 'black' ">orange</h2>
+
+<h2 [ngStyle]="titlestyles" >Style binding </h2>
+<button (click)="onClick()" class="btn btn-primary">Greet </button>
+<button (click)="greetings = 'single line javascript '" class="btn btn-primary">Greet 02 </button>
+
+<h1>{{greetings}}</h1>
+<button (click)="onClickk()" class="btn btn-danger" >disappear  </button>
+
+<input #myInput type="text">
+<button (click)="logmessage()" class="btn btn-success">Log</button>
+<h1>Two way binding</h1>
+<input [(ngModel)]="namee"  type="text">
+<h1>{{namee}}</h1>
+<h2 *ngIf="true">
+    ngif is true 
+</h2>
+<h2 *ngIf="displayName">
+    ngif is true 
+</h2>
+<!-- ngIf else block -->
+<h2 *ngIf="displayName;  else elseBlock">
+    ngif is true 
+</h2>
+<ng-template #elseBlock>
+    <h1>
+     display name is false 
+    </h1>
+</ng-template>
+<!-- <div *ngIf="displayName; then thenBlock ; else elseBlock"></div> -->
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">ypu've picked this color red </div>
+    <div *ngSwitchCase="'blue'">ypu've picked this color blue </div>
+    <div *ngSwitchCase="'green'">ypu've picked this color green</div>
+    <div *ngSwitchDefault="'green'">Pick Again</div>
+</div>
+<div *ngFor="let Todo of todos">
+    <h1>{{Todo.sno}} - {{Todo.title}} - {{Todo.desc}} - {{Todo.active}}</h1>
+</div>
+<!-- here let is the variable declaration of color keyword in html  -->
+<div *ngFor="let color of colors; index as i;first as f">
+    <h1>
+        {{f}}
+        {{i+1}}
+        {{color}}
+    </h1>
+</div>
+<h1>pipes in angular {{name | lowercase }}</h1>
+<h1>pipes in angular {{name | uppercase }}</h1>
+<h1>pipes in angular {{name | titlecase }}</h1>
+<h1>pipes in angular {{name | slice:3 }}</h1>
+<h1>{{ traill | json }}</h1>
+<h2>{{0.25 | currency : 'INR' }}</h2>
+
+<h3>Services  </h3>
+<h1>All employee details </h1>
+<!-- 
+<ul *ngFor="let employe of employee">
+    <li>{{employe.name}}--  {{employe.id}}----  {{employe.age}}</li>
+</ul> -->
+
