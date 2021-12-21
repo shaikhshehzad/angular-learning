@@ -1,9 +1,22 @@
+<router-outlet></router-outlet>
+<app-department-list></app-department-list>
+
+<!-- the above tag is where it gets displayed  -->
 <div >
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">To-Do List </span>
         </div>
       </nav>
+      <nav>
+        <button>
+        <a routerLink="/departments" >Department </a></button>
+        <button>
+
+        <a routerLink="/students" > students</a>
+      </button>
+      </nav>
+      <h1 class="container">Angular Learning !</h1>
 <!-- <h1>hello {{title}} </h1> -->
 <div class="container">
 <app-todos></app-todos>
@@ -11,6 +24,9 @@
 <app-employee-detail>
 </app-employee-detail>
 <app-employee-list></app-employee-list>
+<app-student-list></app-student-list>
+
+
 
 
 </div>
